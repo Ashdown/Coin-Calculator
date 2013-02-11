@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coin Calculator - Rory Devane</title>
+        <script data-main="js/calculate" src="js/require-jquery.js"></script>
+    </head>
+    <body>
+        <h1>Coin Calculator</h1>
+        <p>Enter a value below and click the button to calculate the minimum amount of coins that can be used to make this amount.</p>
+        <form class="coin-calculator" action="#">
+            <input type="text" name="money"/>
+            <input type="submit" value="Calculate"/>
+        </form>
+        <h2>Coin Denominations</h2>
+        <p>The Amount you entered in pence: <span class="amount">0</span></p>
+        <h3>Here are the coins you need to make this amount</h3>
+        <ul class="coin-denominations">
+            <li>&pound;2: <span class="coin-denomination-two-pound">0</span></li>
+            <li>&pound;1: <span class="coin-denomination-one-pound">0</span></li>
+            <li>50p: <span class="coin-denomination-fifty-pence">0</span></li>
+            <li>20p: <span class="coin-denomination-twenty-pence">0</span></li>
+            <li>2p: <span class="coin-denomination-two-pence">0</span></li>
+            <li>1p: <span class="coin-denomination-one-pence">0</span></li>
+        </ul>
+    </body>
+</html>
