@@ -7,15 +7,19 @@ require(['utils'], function(util){
                 new Array("197p", 197),
                 new Array("2p", 2),
                 new Array("1.87", 187),
-                new Array("£1.23", 123),
-                new Array("£2",200),
-                new Array("£10",1000),
-                new Array("£1.87p",187),
-                new Array("£1p", 100),
-                new Array("£1.p",100),
+                new Array("\u00A31.23", 123),
+                new Array("\u00A32",200),
+                new Array("\u00A310",1000),
+                new Array("\u00A31.87p",187),
+                new Array("\u00A31p", 100),
+                new Array("\u00A31.p",100),
                 new Array("001.41p",141),
                 new Array("4.235p", 424),
-                new Array("£1.257422457p",126));
+                new Array("\u00A31.257422457p",126),
+                new Array("", 0),
+                new Array("1x", 0),
+                new Array("\u00A3x.0p", 0),
+                new Array("\u00A3p", 0));
             for(var count = 0;count<data.length;count++) {
                 expect(util.convertStringToPence(data[count][0])).toBe(data[count][1]);
             }

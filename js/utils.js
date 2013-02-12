@@ -9,11 +9,22 @@ define({
 
     convertStringToPence : function (money) {
 
-        var isInPounds = (money.indexOf('£') > 0)? true : false,
-            hasDecimalPlace = (money.indexOf('.') > 0)? true : false;
+        var isInPounds = false,
+            hasDecimalPlace = false;
 
-        //strip non numeric characters
-        money = money.replace(/[^0-9, .]/g, '')
+        if (money.indexOf('£') >= 0) {
+            isInPounds = true;
+            money = money.replace('£','');
+        }
+        if (money.indexOf('.') >= 0) {
+            hasDecimalPlace = true;
+        }
+        money = money.replace('p','');
+
+        //check for non valid characters
+        if (money.match(/[^0-9,.]/) || money.length==0) {
+            money = "0";
+        }
 
         //convert to a floating number
         money = parseFloat(money);
