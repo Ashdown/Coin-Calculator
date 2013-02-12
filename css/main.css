@@ -1,0 +1,60 @@
+body {
+    font: verdana,helvetica,arial,sans-serif;
+    font-size: 10px;
+    color: #000000;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h1, h2, h3, p {
+    padding: 8px 8px 8px 0;
+}
+h1 {
+    font-size: 3.2em;
+    line-height: 40px;
+}
+h2 {
+    font-size: 2.4em;
+    line-height: 32px;
+}
+h3 {
+    font-size: 1.8em;
+    line-height: 20px;
+}
+p, li, input {
+    font-size: 1.6em;
+    line-height: 20px;
+}
+li {
+    list-stype-type: none;
+}
+form {
+    background-color: #CCCCCC;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+.coin-denominations {
+    background-color: #CCCCCC;
+    padding: 0 0 8px 8px;
+    overflow:hidden;
+}
+.coin-denominations-item {
+    background-color: #666666;
+    color: #FFFFFF;
+    padding: 8px;
+    width: 80px;
+    min-height: 80px;
+    display: inline-block;
+    float:left;
+    margin: 8px 8px 0 0;
+    font-size: 3.2em;
+    line-height: 32px;
+    text-align: center;
+}
+.coin-denominations-item span {
+    font-weight: bold;
+    display:block;
+    margin-top: 8px;
+    padding: 8px;
+}
